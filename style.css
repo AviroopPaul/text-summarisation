@@ -1,0 +1,33 @@
+body{
+  font-family: 'Inter', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+.navbar {
+    background-color: #a3ff4e ;/* Change the background color */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em; /* Increase the font size of the brand */
+    color: rgb(236, 0, 0); /* Change the text color */
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 0.5em; /* Add some space between the links */
+  }
+  
+  .nav-item a {
+    color: rgb(245, 85, 85); /* Change the text color of the links */
+    text-decoration: none; /* Remove the underline from the links */
+  }
+  
+  .nav-item a:hover {
+    color: rgb(255, 39, 39); /* Change the text color of the links on hover */
+  }
+  
+  /* Style the active link */
+  .nav-item .active {
+    font-weight: bold;
+    color: #333;
+  }
+  
