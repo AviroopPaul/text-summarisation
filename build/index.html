@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="D:\Projects\Text_Summarise\style.csss"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-+x+xJLsMh/vT8QDhg7zTZn6uZ7wT8JLWVNMfI+t1Bc7vEOX9gWVSLaGS4Q4zLZiqK8ZlkC5MQxr2Qr/5v5I5Ig=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Summariser</title>
+  </head>
+  <body
+    style="
+      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto Mono', monospace;
+      background-color: black;
+      color:white;
+    "
+  >
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: grey"
+    >
+      <a class="navbar-brand" href="#" style="color:white; font-size:xx-large;">Text Summariser</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <form method="POST" action="/process">
+      <!-- Main Section -->
+      <br />
+      <br />
+      <div class="form-group d-flex flex-column" style="text-align: center">
+        <label for="exampleFormControlTextarea1"
+          >Enter your text/paragraph here</label
+        >
+        <div class="d-inline-flex p-4">
+          <textarea class="form-control" name="inputText" rows="3" style="background-color: dimgray;"></textarea>
+          <br />
+        </div>
+        <div class="flex-column">
+          <div class="d-inline-flex p-2">
+            <label for="exampleFormControlSelect1"
+              >Select your Summarisation Algorithm</label
+            >
+            <select class="form-control" name="modelChoice" style="background-color: dimgray; color:white;">
+              <option>default</option>
+              <option>lex_summarizer</option>
+              <option>luhn_summarizer</option>
+              <option>lsa_summarizer</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br />
+      <center>
+      <button type="reset" class="btn btn-danger" value="reset">Clear</button>
+      <button type="submit" class="btn btn-success" value="submit">
+        Summarise
+      </button>
+    </center>
+    </form>
+    <br><br>
+    <center>
+    <div style="text-align: center">
+    <form method="POST" action="/process_url">
+      <label for="exampleFormControlTextarea1">Enter URL of the text</label>
+      <div class="d-inline-flex p-2" >
+      <textarea class="form-control" id="textinput" rows="1" style="background-color: dimgray;"></textarea>
+
+      <br />
+    </div>
+    <button type="reset" class="btn btn-danger" value="reset">Clear</button>
+    <button type="submit" class="btn btn-success" value="submit">
+      Summarise
+    </button>
+    </form>
+    </div>
+    </center>
+
+    <footer class="bg-dark py-3 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4 class="text-white font-weight-bold">Company Name</h4>
+            <p class="text-white-50">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              dictum, lacus a dictum facilisis, diam magna porttitor lectus.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4 class="text-white font-weight-bold">Social Media</h4>
+            <ul class="list-unstyled">
+              <li class="text-white-50">
+                <a href="#" class="text-white-50">Facebook</a>
+              </li>
+              <li class="text-white-50">
+                <a href="#" class="text-white-50">Twitter</a>
+              </li>
+              <li class="text-white-50">
+                <a href="#" class="text-white-50">Instagram</a>
+              </li>
+              <li class="text-white-50">
+                <a href="#" class="text-white-50">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4 class="text-white font-weight-bold">Copyright</h4>
+            <p class="text-white-50">&copy; 2021 Company Name</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
