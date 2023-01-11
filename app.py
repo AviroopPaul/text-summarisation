@@ -10,9 +10,11 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen, Request
 import nltk
 nltk.download('punkt')
+import en_core_web_sm
 
 
-nlp=spacy.load("en_core_web_sm")
+
+nlp = en_core_web_sm.load()
 
 app=Flask(__name__)
 
