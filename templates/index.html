@@ -34,7 +34,7 @@
       font-family: 'Inter', sans-serif;
       font-family: 'Roboto Mono', monospace;
       background-color: black;
-      color:white;
+      color: white;
     "
   >
     <!-- NavBar -->
@@ -42,7 +42,9 @@
       class="navbar navbar-expand-lg navbar-light"
       style="background-color: grey"
     >
-      <a class="navbar-brand" href="#" style="color:white; font-size:xx-large;">Text Summariser</a>
+      <a class="navbar-brand" href="#" style="color: white; font-size: xx-large"
+        >Text Summariser</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -74,11 +76,16 @@
       <br />
       <br />
       <div class="form-group d-flex flex-column" style="text-align: center">
-        <label for="exampleFormControlTextarea1"
+        <label for="exampleFormControlTextarea1" style="font-size: x-large"
           >Enter your text/paragraph here</label
         >
-        <div class="d-inline-flex p-4">
-          <textarea class="form-control" name="inputText" rows="3" style="background-color: dimgray;"></textarea>
+        <div class="d-inline-flex p-5">
+          <textarea
+            class="form-control"
+            name="inputText"
+            rows="3"
+            style="background-color: dimgray; color: white; padding: 2rem"
+          ></textarea>
           <br />
         </div>
         <div class="flex-column">
@@ -86,7 +93,11 @@
             <label for="exampleFormControlSelect1"
               >Select your Summarisation Algorithm</label
             >
-            <select class="form-control" name="modelChoice" style="background-color: dimgray; color:white;">
+            <select
+              class="form-control"
+              name="modelChoice"
+              style="background-color: dimgray; color: white"
+            >
               <option>default</option>
               <option>lex_summarizer</option>
               <option>luhn_summarizer</option>
@@ -97,60 +108,56 @@
       </div>
       <br />
       <center>
-      <button type="reset" class="btn btn-danger" value="reset">Clear</button>
-      <button type="submit" class="btn btn-success" value="submit">
-        Summarise
-      </button>
-    </center>
+        <button type="reset" class="btn btn-danger" value="reset">Clear</button>
+        <button type="submit" class="btn btn-success" value="submit">
+          Summarise
+        </button>
+      </center>
     </form>
-    <br><br>
+    <br /><br />
     <center>
-    <div style="text-align: center">
-    <form method="POST" action="/process_url">
-      <label for="exampleFormControlTextarea1">Enter URL of the text</label>
-      <div class="d-inline-flex p-2" >
-      <textarea class="form-control" id="textinput" rows="1" style="background-color: dimgray;"></textarea>
-
-      <br />
-    </div>
-    <button type="reset" class="btn btn-danger" value="reset">Clear</button>
-    <button type="submit" class="btn btn-success" value="submit">
-      Summarise
-    </button>
-    </form>
-    </div>
-    </center>
+      
 
     <footer class="bg-dark py-3 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
-            <h4 class="text-white font-weight-bold">Company Name</h4>
+            <h4 class="text-white font-weight-bold">Text Summariser</h4>
             <p class="text-white-50">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              dictum, lacus a dictum facilisis, diam magna porttitor lectus.
+              Summarise any given text into a compact paragraph.
             </p>
           </div>
           <div class="col-12 col-md-4">
             <h4 class="text-white font-weight-bold">Social Media</h4>
             <ul class="list-unstyled">
               <li class="text-white-50">
-                <a href="#" class="text-white-50">Facebook</a>
+                <a
+                  href="https://github.com/AviroopPaul"
+                  class="text-white-50"
+                  style="padding-left: 3rem"
+                  >GitHub</a
+                >
               </li>
               <li class="text-white-50">
-                <a href="#" class="text-white-50">Twitter</a>
+                <a
+                  href="https://www.instagram.com/avirooppaul/"
+                  class="text-white-50"
+                  style="padding-left: 3rem"
+                  >Instagram</a
+                >
               </li>
               <li class="text-white-50">
-                <a href="#" class="text-white-50">Instagram</a>
-              </li>
-              <li class="text-white-50">
-                <a href="#" class="text-white-50">LinkedIn</a>
+                <a
+                  href="https://www.linkedin.com/in/avirooppaul/"
+                  class="text-white-50"
+                  style="padding-left: 3rem"
+                  >LinkedIn</a
+                >
               </li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
-            <h4 class="text-white font-weight-bold">Copyright</h4>
-            <p class="text-white-50">&copy; 2021 Company Name</p>
+            <h4 class="text-white font-weight-bold">&copy;AviroopPaul</h4>
           </div>
         </div>
       </div>

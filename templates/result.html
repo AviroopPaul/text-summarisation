@@ -19,9 +19,10 @@
     />
   </head>
   <body  style="font-family: 'Inter', sans-serif;
-  font-family: 'Roboto Mono', monospace; background-color: white">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a3ff4e">
-      <a class="navbar-brand" href="#">Text Summariser</a>
+  font-family: 'Roboto Mono', monospace; background-color: black; color:white">
+    <nav class="navbar navbar-expand-lg navbar-light"
+    style="background-color: grey">
+      <a class="navbar-brand" href="#" style="color:white; font-size:xx-large;">Text Summariser</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -48,11 +49,11 @@
       </div>
     </nav>
     <br /><br />
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-header">Input Text</div>
-          <div class="card-body">
+    <div class="row" style="padding: 2rem;">
+      <div class="col-sm-6 ">
+        <div class="card" >
+          <div class="card-header" style="background-color: gray">Input Text</div>
+          <div class="card-body" style="background-color: dimgray;">
             <p>Reading Time: {{ finalReadingTime }} minute</p>
             <p>{{ctext}}</p>
           </div>
@@ -60,8 +61,8 @@
       </div>
       <div class="col-sm-6">
         <div class="card">
-          <div class="card-header">Summarised Text</div>
-          <div class="card-body">
+          <div class="card-header" style="background-color: gray;">Summarised Text</div>
+          <div class="card-body" style="background-color: dimgray;">
             <p>
               Reading Time:
               <span class="text-success">
@@ -84,27 +85,48 @@
 </div>
 
 <footer class="bg-dark py-3 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <h4 class="text-white font-weight-bold">Company Name</h4>
-          <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum, lacus a dictum facilisis, diam magna porttitor lectus.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <h4 class="text-white font-weight-bold">Social Media</h4>
-          <ul class="list-unstyled">
-            <li class="text-white-50"><a href="#" class="text-white-50">Facebook</a></li>
-            <li class="text-white-50"><a href="#" class="text-white-50">Twitter</a></li>
-            <li class="text-white-50"><a href="#" class="text-white-50">Instagram</a></li>
-            <li class="text-white-50"><a href="#" class="text-white-50">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4">
-          <h4 class="text-white font-weight-bold">Copyright</h4>
-          <p class="text-white-50">&copy; 2021 Company Name</p>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h4 class="text-white font-weight-bold">Text Summariser</h4>
+        <p class="text-white-50">
+          Summarise any given text into a compact paragraph.
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <h4 class="text-white font-weight-bold">Social Media</h4>
+        <ul class="list-unstyled">
+          <li class="text-white-50">
+            <a
+              href="https://github.com/AviroopPaul"
+              class="text-white-50"
+              style="padding-left: 3rem"
+              >GitHub</a
+            >
+          </li>
+          <li class="text-white-50">
+            <a
+              href="https://www.instagram.com/avirooppaul/"
+              class="text-white-50"
+              style="padding-left: 3rem"
+              >Instagram</a
+            >
+          </li>
+          <li class="text-white-50">
+            <a
+              href="https://www.linkedin.com/in/avirooppaul/"
+              class="text-white-50"
+              style="padding-left: 3rem"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h4 class="text-white font-weight-bold">&copy;AviroopPaul</h4>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   </body>
 </html>

@@ -72,6 +72,8 @@ def process():
     finalTime=end-start
     return render_template('result.html', ctext=inputText, finalReadingTime=finalReadingTime, summaryReadingTime=summaryReadingTime,finalSummary=finalSummary, modelSelected=modelChoice)
 
+
+
 if __name__ == '__main__':
  app.run(debug=True)
 
